@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="register.css">
+    <title>Register</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <dir class="form">
+                <div class="text"> <h1> Register</h1></div>
+                <form action="">
+                    <div class="inp">
+                        <i class="fa-solid fa-user" style="color: #2f0297;"></i>
+                        <input type="text" name="username" class="box" placeholder="Username" required>
+                    </div>
+                    <div class="inp">
+                        <i class="fa-solid fa-lock" style="color: #2f0297;"></i>
+                        <input type="password" name="password" class="box" placeholder="Password" required>
+                    </div>
+                    <div class="inp">
+                        <i class="fa-solid fa-envelope" style="color: #2f0297;"></i>
+                        <input type="email" name="username" class="box" placeholder="Email" required>
+                    </div>
+                    <div class="inp">
+                        <i class="fa-solid fa-phone" style="color: #2f0297;"></i>
+                        <input type="tel" name="phone" class="box" placeholder="Phone Number" required>
+                    </div>
+                    <button class="btn">Register</button>
+                </form>
+
+            </dir>
+        </div>
+    </div>
+</body>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data:{
+            image: 'https://media.discordapp.net/attachments/933721474324381707/1089545073689104404/image.png?width=525&height=671',
+            detail: 'hi',
+        }
+    })
+</script>
+</html>
